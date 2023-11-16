@@ -1,0 +1,28 @@
+wxzj_bg_log.id	int8	19	0	N	Y	主键
+wxzj_bg_log.fhzh_id	int8	19	0	Y	N	分户账户id
+wxzj_bg_log.bgjl	varchar	255	0	Y	N	变更记录
+wxzj_bg_log.dept_id	int8	19	0	Y	N	部门
+wxzj_bg_log.del_flag	int2	5	0	Y	N	0	0-正常 1-删除
+wxzj_bg_log.create_time	timestamp	29	6	Y	N	创建时间
+wxzj_bg_log.update_time	timestamp	29	6	Y	N	修改时间
+wxzj_bg_log.create_by	varchar	50	0	Y	N	创建人
+wxzj_bg_log.update_by	varchar	50	0	Y	N	修改人
+wxzj_bg_log.tenant_id	int8	19	0	Y	N	租户
+wxzj_fhzh.id	int8	19	0	N	Y	主键
+wxzj_fhzh.yz	varchar	50	0	Y	N	业主
+wxzj_fhzh.zjlx	int2	5	0	Y	N	证件类型 111-居民身份证 112 -临时居民身份证  335-机动车驾驶证 336-机动车临时驾驶许可证 414-普通护照 511-台湾居民来往大陆通行证（多次有效） 512-台湾居民来往大陆通行证（一次有效） 516-港澳居民来来往内地通行证 552-台湾居民定居证 553-外国人永久居留证 554-外国人居留证或居留许可 555-外国人临时居留证
+wxzj_fhzh.zjhm	varchar	20	0	Y	N	证件号码
+wxzj_fhzh.sjhm	varchar	20	0	Y	N	手机号码
+wxzj_fhzh.jczj	numeric	18	2	Y	N	交存总计
+wxzj_fhzh.syzj	numeric	18	2	Y	N	使用总计
+wxzj_fhzh.zhye	numeric	18	2	Y	N	账户余额
+wxzj_fhzh.del_flag	int2	5	0	Y	N	0	0-正常 1-删除
+wxzj_fhzh.create_time	timestamp	29	6	Y	N	创建时间
+wxzj_fhzh.update_time	timestamp	29	6	Y	N	修改时间
+wxzj_fhzh.create_by	varchar	50	0	Y	N	创建人
+wxzj_fhzh.update_by	varchar	50	0	Y	N	修改人
+wxzj_fhzh.tenant_id	int8	19	0	Y	N	租户
+wxzj_fhzh.bz	varchar	225	0	Y	N	备注
+wxzj_fhzh.djje	numeric	15	2	Y	N	冻结金额
+wxzj_fhzh.yhzh_id	int8	19	0	Y	N	银行账户id
+wxzj_fhzh.fhzh	int8	19	0	Y	N	分户账号
